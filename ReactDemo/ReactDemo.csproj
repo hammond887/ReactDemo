@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\tutorial.jsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\tutorial.jsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\tutorial.jsx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="JavaScriptEngineSwitcher.Extensions.MsDependencyInjection" Version="3.21.0" />
     <PackageReference Include="JavaScriptEngineSwitcher.V8" Version="3.23.2" />
     <PackageReference Include="JavaScriptEngineSwitcher.V8.Native.win-x64" Version="3.23.2" />
