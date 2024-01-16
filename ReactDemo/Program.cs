@@ -33,6 +33,7 @@ app.UseReact(config =>
     //example: config .AddScript("~/js/First.jsx") .AddScript("~/js/Second.jsx");
     //if you use external build too (babel,gulp) you can improve performance by disabling reactjs.net version of babel + loading pre- transpiled script
     //example config.SetLoadBabel(false)  .sddscriptwithouttransform("~/js/bundle.server.js");
+    config.AddScript("~/js/remarkable.min.js").AddScript("~/js/tutorial.jsx");
 });
 
 app.UseStaticFiles();

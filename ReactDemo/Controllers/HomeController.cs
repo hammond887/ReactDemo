@@ -40,7 +40,7 @@ namespace ReactDemo.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            return View(_comments);
         }
         [Route("comments/new")]
         [HttpPost]
